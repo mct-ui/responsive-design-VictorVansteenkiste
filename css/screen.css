@@ -156,24 +156,35 @@ a:hover, a:focus {
 @font-face {
     font-family: "HK Grotesk Web";
     font-weight: 200;
-    src: url("../font/hkgrotesk-light-webfont.woff2") format("woff2"), url("../fonts/hkgrotesk-light-webfont.woff") format("woff");
+    src: url("../fonts/hkgrotesk-light-webfont.woff2") format("woff2"), url("../fonts/hkgrotesk-light-webfont.woff") format("woff");
 }
 
 @font-face {
     font-family: "HK Grotesk Web";
     font-weight: 400;
-    src: url("../font/hkgrotesk-regular-webfont.woff2") format("woff2"), url("../fonts/hkgrotesk-regular-webfont.woff") format("woff");
+    src: url("../fonts/hkgrotesk-regular-webfont.woff2") format("woff2"), url("../fonts/hkgrotesk-regular-webfont.woff") format("woff");
 }
 
 @font-face {
     font-family: "HK Grotesk Web";
     font-weight: 600;
-    src: url("../font/hkgrotesk-bold-webfont.woff2") format("woff2"), url("../fonts/hkgrotesk-bold-webfont.woff") format("woff");
+    src: url("../fonts/hkgrotesk-medium-webfont.woff2") format("woff2"), url("../fonts/hkgrotesk-medium-webfont.woff") format("woff");
 }
 
 /*------------------------------------*\
   #OBJECTS
 \*------------------------------------*/
+
+/*
+    Objects: List
+    ---
+    Small reusable object to remove default list styling from lists
+*/
+
+.o-list {
+    list-style: none;
+    padding: 0;
+}
 
 /*
     Objects: Row
@@ -213,7 +224,7 @@ a:hover, a:focus {
 .o-container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 70.5em;
+    max-width: 56.4em;
     /* 90 * 16px = 1440px */
 }
 
@@ -337,6 +348,60 @@ a:hover, a:focus {
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
+
+/*
+    Component: Nav
+    ---
+    Main navigation of the site
+*/
+
+.c-nav {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.c-nav--meta {
+    font-size: 16px;
+}
+
+.c-nav__link {
+    text-decoration: none;
+    font-weight: 400;
+    padding: 8px 0;
+    display: block;
+}
+
+.c-nav--meta .c-nav__link, .c-nav--meta .c-nav__link:visited, .c-nav--meta .c-nav__link:active {
+    color: #6C6C75;
+}
+
+.c-nav__link:hover, .c-nav__link:focus {
+    color: #5051DB;
+}
+
+.c-nav__link, .c-nav__link:visited, .c-nav__link:active {
+    color: #6C6C75;
+}
+
+.c-nav__link--meta, .c-nav__link--meta:visited, .c-nav__link--meta:active {
+    color: #6C6C75;
+}
+
+.c-nav__link:hover, .c-nav__link:focus {
+    color: #5051DB;
+}
+
+@media (min-width: 768px) {
+    .c-nav__list {
+        display: flex;
+        margin-left: -16px;
+        margin-right: -16px;
+        margin: 0 -16px;
+    }
+    .c-nav__link {
+        padding: 8px 16px;
+    }
+}
 
 /*
     Component: Logo
