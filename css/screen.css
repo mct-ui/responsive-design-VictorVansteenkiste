@@ -478,6 +478,22 @@ a:hover, a:focus {
 \*------------------------------------*/
 
 /*
+    Utilities: color
+    ---
+    Utility classes to put specific colors onto elements
+*/
+
+.u-color-primary-light {}
+
+.u-color-primary-base {}
+
+.u-color-primary-dark {}
+
+.o-row--neutral-x-light {
+    background-color: #F7F7FA;
+}
+
+/*
     Utilities: spacing
     ---
     Utility classes to put specific margins and paddings onto elements
