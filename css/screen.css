@@ -182,7 +182,6 @@ a:hover, a:focus {
 */
 
 .o-section {
-    overflow: auto;
     overflow-x: hidden;
 }
 
